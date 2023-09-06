@@ -168,6 +168,9 @@ async def draw_canvas_func(event):
         width=app.querySelector("#canvas_width input").value
         height=app.querySelector("#canvas_height input").value
         selection_size=app.querySelector("#selection_size input").value
+        selection_width=app.querySelector("#selection_width input").value
+        selection_height=app.querySelector("#selection_height input").value
+        console.log("width: "+selection_width+", height:"+selection_height)
     except:
         width=1024
         height=768

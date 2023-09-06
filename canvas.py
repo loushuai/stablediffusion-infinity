@@ -111,6 +111,8 @@ class InfCanvas:
         width,
         height,
         selection_size=256,
+        selection_width=256,
+        selection_height=256,
         grid_size=64,
         patch_size=4096,
         test_mode=False,
@@ -130,14 +132,16 @@ class InfCanvas:
         ]
         self.data = {}
         self.grid_size = grid_size
-        self.selection_size_w = selection_size
-        self.selection_size_h = selection_size
+        # self.selection_size_w = selection_size
+        # self.selection_size_h = selection_size
+        self.selection_size_w = selection_width
+        self.selection_size_h = selection_height
         self.patch_size = patch_size
         # note that for image data, the height comes before width
         self.buffer = np.zeros((height, width, 4), dtype=np.uint8)
-        self.sel_buffer = np.zeros((selection_size, selection_size, 4), dtype=np.uint8)
+        self.sel_buffer = np.zeros((selection_width, selection_height, 4), dtype=np.uint8)
         self.sel_buffer_bak = np.zeros(
-            (selection_size, selection_size, 4), dtype=np.uint8
+            (selection_width, selection_height, 4), dtype=np.uint8
         )
         self.sel_dirty = False
         self.buffer_dirty = False
