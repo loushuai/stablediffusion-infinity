@@ -1004,14 +1004,14 @@ with blocks as demo:
                     label="Selection box width",
                     value=256,
                     precision=0,
-                    elem_id="selection_size",
+                    elem_id="selection_width",
                 )
             with gr.Column(scale=1, min_width=100):
                 selection_height = gr.Number(
                     label="Selection box height",
                     value=256,
                     precision=0,
-                    elem_id="selection_size",
+                    elem_id="selection_height",
                 )
         model_path_input = gr.Textbox(
             value=model_path_input_val,
