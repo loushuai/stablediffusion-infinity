@@ -981,14 +981,14 @@ with blocks as demo:
             with gr.Column(scale=1, min_width=100):
                 canvas_width = gr.Number(
                     label="Canvas width",
-                    value=1024,
+                    value=2046,
                     precision=0,
                     elem_id="canvas_width",
                 )
             with gr.Column(scale=1, min_width=100):
                 canvas_height = gr.Number(
                     label="Canvas height",
-                    value=600,
+                    value=1024,
                     precision=0,
                     elem_id="canvas_height",
                 )
