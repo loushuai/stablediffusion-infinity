@@ -1005,6 +1005,7 @@ with blocks as demo:
                     value=256,
                     precision=0,
                     elem_id="selection_size",
+                )
             with gr.Column(scale=1, min_width=100):
                 selection_height = gr.Number(
                     label="Selection box height",
