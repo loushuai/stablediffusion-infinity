@@ -1107,7 +1107,7 @@ with blocks as demo:
     cancel_button = gr.Button("Cancel", elem_id="cancel", visible=False)
     if not RUN_IN_SPACE:
 
-        def setup_func(token_val, width, height, size, selection_width, selection_height, model_choice, model_path):
+        def setup_func(token_val, width, height, size, sel_width, sel_height, model_choice, model_path):
             try:
                 get_model(token_val, model_choice, model_path=model_path)
             except Exception as e:
