@@ -1126,6 +1126,8 @@ with blocks as demo:
                 canvas_width: gr.update(visible=False),
                 canvas_height: gr.update(visible=False),
                 selection_size: gr.update(visible=False),
+                selection_width: gr.update(visible=False),
+                selection_height: gr.update(visible=False),
                 setup_button: gr.update(visible=False),
                 frame: gr.update(visible=True),
                 upload_button: gr.update(value="Upload Image"),
