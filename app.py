@@ -999,6 +999,18 @@ with blocks as demo:
                     precision=0,
                     elem_id="selection_size",
                 )
+            with gr.Column(scale=1, min_width=100):
+                selection_width = gr.Number(
+                    label="Selection box width",
+                    value=256,
+                    precision=0,
+                    elem_id="selection_size",
+            with gr.Column(scale=1, min_width=100):
+                selection_height = gr.Number(
+                    label="Selection box height",
+                    value=256,
+                    precision=0,
+                    elem_id="selection_size",
         model_path_input = gr.Textbox(
             value=model_path_input_val,
             label="Custom Model Path (You have to select a correct model type for your local model)",
